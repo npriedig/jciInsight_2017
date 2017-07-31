@@ -1,0 +1,26 @@
+Starting QoRTs v1.1.8 (Compiled Wed Jul 13 13:35:56 EDT 2016)
+Starting time: (Fri Jan 27 04:09:47 EST 2017)
+INPUT_COMMAND(QC)
+  INPUT_ARG(infile)=/mnt/mobydisk/pan/genomics/data/alee/nolan/projects/breast-mets/rna-seq/bone/BM08-DECAL/BM08-DECAL-star-2.4.2a-counts-ensemblv80/BM08-DECAL.star.sorted.bam
+  INPUT_ARG(gtffile)=/mnt/mobydisk/pan/genomics/data/alee/nolan/apps/star/reference-files/Homo_sapiens.GRCh38.80.gtf
+  INPUT_ARG(outdir)=/mnt/mobydisk/pan/genomics/data/alee/nolan/projects/breast-mets/rna-seq/bone/BM08-DECAL/BM08-DECAL-qorts-v1.1.8
+  INPUT_ARG(stranded)=true
+Created Log File: /mnt/mobydisk/pan/genomics/data/alee/nolan/projects/breast-mets/rna-seq/bone/BM08-DECAL/BM08-DECAL-qorts-v1.1.8/QC.ZYyFd0d24fMr.log
+Starting QC
+[Time: 2017-01-27 04:09:47] [Mem usage: [75MB / 2058MB]] [Elapsed Time: 00:00:00.0000]
+QoRTs is Running in paired-end mode.
+QoRTs is Running in any-sorted mode.
+Running functions: NVC, GCDistribution, GeneCalcs, QualityScoreDistribution, 
+        writeJunctionSeqCounts, writeKnownSplices, 
+        writeNovelSplices, writeClippedNVC, CigarOpDistribution, 
+        InsertSize, chromCounts, writeSpliceExon, 
+        writeGenewiseGeneBody, JunctionCalcs, writeGeneCounts, 
+        writeBiotypeCounts, writeDESeq, writeDEXSeq, writeGeneBody, 
+        StrandCheck
+Pre-alignment read count unknown (Set --seqReadCt or --rawfastq)
+Checking first 10000 reads. Checking SAM file for formatting errors...
+============================FATAL_ERROR============================
+QoRTs encountered a FATAL ERROR. For general help, use command:
+          java -jar path/to/jar/QoRTs.jar --man
+============================FATAL_ERROR============================
+Error info:

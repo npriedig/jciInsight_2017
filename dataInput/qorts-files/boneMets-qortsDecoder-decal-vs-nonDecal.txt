@@ -1,0 +1,7 @@
+unique.ID	group.ID
+22M-DECAL-qorts-v1.1.8	Decal
+BM03-DECAL-qorts-v1.1.8	Decal
+BM08-DECAL-qorts-v1.1.8	Decal
+22M-qorts-v1.1.8	Nondecal
+BM03-qorts-v1.1.8	Nondecal
+BM08-qorts-v1.1.8	Nondecal

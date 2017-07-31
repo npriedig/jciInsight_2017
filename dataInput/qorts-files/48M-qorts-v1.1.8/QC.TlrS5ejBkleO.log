@@ -1,0 +1,192 @@
+Starting QoRTs v1.1.8 (Compiled Wed Jul 13 13:35:56 EDT 2016)
+Starting time: (Fri Jan 27 01:53:33 EST 2017)
+INPUT_COMMAND(QC)
+  INPUT_ARG(infile)=/mnt/mobydisk/pan/genomics/data/alee/nolan/projects/breast-mets/rna-seq/bone/48M/48M-star-2.4.2a-counts-ensemblv80/48M.star.sorted.bam
+  INPUT_ARG(gtffile)=/mnt/mobydisk/pan/genomics/data/alee/nolan/apps/star/reference-files/Homo_sapiens.GRCh38.80.gtf
+  INPUT_ARG(outdir)=/mnt/mobydisk/pan/genomics/data/alee/nolan/projects/breast-mets/rna-seq/bone/48M/48M-qorts-v1.1.8
+  INPUT_ARG(stranded)=true
+Created Log File: /mnt/mobydisk/pan/genomics/data/alee/nolan/projects/breast-mets/rna-seq/bone/48M/48M-qorts-v1.1.8/QC.TlrS5ejBkleO.log
+Starting QC
+[Time: 2017-01-27 01:53:33] [Mem usage: [75MB / 2058MB]] [Elapsed Time: 00:00:00.0000]
+QoRTs is Running in paired-end mode.
+QoRTs is Running in any-sorted mode.
+Running functions: NVC, GCDistribution, GeneCalcs, QualityScoreDistribution, 
+        writeJunctionSeqCounts, writeKnownSplices, 
+        writeNovelSplices, writeClippedNVC, CigarOpDistribution, 
+        InsertSize, chromCounts, writeSpliceExon, 
+        writeGenewiseGeneBody, JunctionCalcs, writeGeneCounts, 
+        writeBiotypeCounts, writeDESeq, writeDEXSeq, writeGeneBody, 
+        StrandCheck
+Pre-alignment read count unknown (Set --seqReadCt or --rawfastq)
+Checking first 10000 reads. Checking SAM file for formatting errors...
+   Stats on the first 10000 reads:
+        Num Reads Primary Map:    3521
+        Num Reads Paired-ended:   10000
+        Num Reads mapped pair:    3521
+        Num Pair names found:     2113
+        Num Pairs matched:        1408
+        Read Seq length:          75 to 75
+        Unclipped Read length:    75 to 75
+        Final maxReadLength:      75
+        maxPhredScore:            36
+        minPhredScore:            2
+   Note: Data appears to be paired-ended.
+   Sorting Note: Reads are not sorted by name (This is OK).
+   Sorting Note: Reads are sorted by position (This is OK).
+Done checking first 10000 reads. No major problems detected.
+SAMRecord Reader Generated. Read length: 75.
+[Time: 2017-01-27 01:53:35] [Mem usage: [125MB / 2058MB]] [Elapsed Time: 00:00:01.0933]
+> Init GeneCalcs Utility
+helper_calculateGeneAssignmentMap_strict. Found: 65217 genes in the supplied annotation.
+helper_calculateGeneAssignmentMap_strict. Found: 7018 genes with ambiguous segments.
+helper_calculateGeneAssignmentMap_strict. Found: 58199 genes after first-pass filtering
+making makeGeneIntervalMap for geneBody calculations. Found: 58199 acceptable genes for gene-body analysis.
+Compiling flat feature annotation, internally in memory...
+FlatteningGtf: starting...(2017-01-27 01:55:32)
+    FlatteningGtf: gtf file read complete.(2017-01-27 01:57:14)
+    FlatteningGtf: Splice Junction Map read.(2017-01-27 01:57:16)
+    FlatteningGtf: gene Sets generated.(2017-01-27 01:57:18)
+    FlatteningGtf: Aggregate Sets built.
+    FlatteningGtf: Compiling Aggregate Info . . . (2017-01-27 01:57:18)
+    FlatteningGtf: Finished Compiling Aggregate Info. (2017-01-27 01:57:18)
+    FlatteningGtf: Iterating through the step-vector...(2017-01-27 01:57:18)
+    FlatteningGtf: Adding the aggregate genes themselves...(2017-01-27 01:57:19)
+    FlatteningGtf: Iterating through the splice junctions...(2017-01-27 01:57:23)
+    FlatteningGtf: Sorting the aggregate genes...(2017-01-27 01:57:25)
+    FlatteningGtf: Folding the FlatGtfLine iterator...(2017-01-27 01:57:25)
+    FlatteningGtf: Features Built.(2017-01-27 01:57:25)
+Internal flat feature annotation compiled!
+> Init InsertSize Utility
+> Init NVC utility
+> Init CigarOpDistribution Utility
+> Init QualityScoreDistribution Utility
+> Init GC counts Utility
+> Init JunctionCalcs utility
+length of knownSpliceMap after instantiation: 374703
+length of knownCountMap after instantiation: 374703
+> Init StrandCheck Utility
+> Init chromCount Utility
+QC Utilities Generated!
+[Time: 2017-01-27 01:57:31] [Mem usage: [4419MB / 6GB]] [Elapsed Time: 00:03:58.0490]
+..........[1000000 Read-Pairs processed] [Time: 2017-01-27 01:59:32] 
+.
+NOTE: Unmatched Read Buffer Size > 100000 [Mem usage:[4772MB / 8GB]]
+    (This is generally not a problem, but if this increases further then OutOfMemoryExceptions
+    may occur.
+    If memory errors do occur, either increase memory allocation or sort the bam-file by name
+    and rerun with the '--nameSorted' option.
+    This might also indicate that your dataset contains an unusually large number of
+    chimeric read-pairs. Or it could occur simply due to the presence of genomic
+    loci with extremly high coverage. It may also indicate a SAM/BAM file that 
+    does not adhere to the standard SAM specification.)
+.
+NOTE: Unmatched Read Buffer Size > 200000 [Mem usage:[2894MB / 8GB]]
+........[2000000 Read-Pairs processed] [Time: 2017-01-27 02:01:31] 
+..........[3000000 Read-Pairs processed] [Time: 2017-01-27 02:03:19] 
+..........[4000000 Read-Pairs processed] [Time: 2017-01-27 02:04:59] 
+..........[5000000 Read-Pairs processed] [Time: 2017-01-27 02:06:26] 
+..........[6000000 Read-Pairs processed] [Time: 2017-01-27 02:08:18] 
+..........[7000000 Read-Pairs processed] [Time: 2017-01-27 02:10:18] 
+..........[8000000 Read-Pairs processed] [Time: 2017-01-27 02:12:17] 
+..........[9000000 Read-Pairs processed] [Time: 2017-01-27 02:14:15] 
+..........[10000000 Read-Pairs processed] [Time: 2017-01-27 02:15:57] 
+..........[11000000 Read-Pairs processed] [Time: 2017-01-27 02:17:41] 
+..........[12000000 Read-Pairs processed] [Time: 2017-01-27 02:19:38] 
+..........[13000000 Read-Pairs processed] [Time: 2017-01-27 02:21:06] 
+..........[14000000 Read-Pairs processed] [Time: 2017-01-27 02:23:06] 
+..........[15000000 Read-Pairs processed] [Time: 2017-01-27 02:24:39] 
+..........[16000000 Read-Pairs processed] [Time: 2017-01-27 02:26:26] 
+..........[17000000 Read-Pairs processed] [Time: 2017-01-27 02:28:12] 
+..........[18000000 Read-Pairs processed] [Time: 2017-01-27 02:30:03] 
+..........[19000000 Read-Pairs processed] [Time: 2017-01-27 02:32:02] 
+..........[20000000 Read-Pairs processed] [Time: 2017-01-27 02:33:59] 
+..........[21000000 Read-Pairs processed] [Time: 2017-01-27 02:35:57] 
+..........[22000000 Read-Pairs processed] [Time: 2017-01-27 02:37:55] 
+..........[23000000 Read-Pairs processed] [Time: 2017-01-27 02:39:38] 
+..........[24000000 Read-Pairs processed] [Time: 2017-01-27 02:41:35] 
+..........[25000000 Read-Pairs processed] [Time: 2017-01-27 02:43:35] 
+..........[26000000 Read-Pairs processed] [Time: 2017-01-27 02:44:58] 
+..........[27000000 Read-Pairs processed] [Time: 2017-01-27 02:46:31] 
+..........[28000000 Read-Pairs processed] [Time: 2017-01-27 02:48:30] 
+..........[29000000 Read-Pairs processed] [Time: 2017-01-27 02:50:15] 
+..........[30000000 Read-Pairs processed] [Time: 2017-01-27 02:51:43] 
+..........[31000000 Read-Pairs processed] [Time: 2017-01-27 02:52:34] 
+..........[32000000 Read-Pairs processed] [Time: 2017-01-27 02:53:33] 
+..........[33000000 Read-Pairs processed] [Time: 2017-01-27 02:55:16] 
+..........[34000000 Read-Pairs processed] [Time: 2017-01-27 02:56:33] 
+..........[35000000 Read-Pairs processed] [Time: 2017-01-27 02:58:04] 
+..........[36000000 Read-Pairs processed] [Time: 2017-01-27 02:59:19] 
+..........[37000000 Read-Pairs processed] [Time: 2017-01-27 03:01:16] 
+..........[38000000 Read-Pairs processed] [Time: 2017-01-27 03:03:11] 
+..........[39000000 Read-Pairs processed] [Time: 2017-01-27 03:05:10] 
+..........[40000000 Read-Pairs processed] [Time: 2017-01-27 03:07:06] 
+..........[41000000 Read-Pairs processed] [Time: 2017-01-27 03:08:57] 
+..........[42000000 Read-Pairs processed] [Time: 2017-01-27 03:10:56] 
+..........[43000000 Read-Pairs processed] [Time: 2017-01-27 03:12:40] 
+..........[44000000 Read-Pairs processed] [Time: 2017-01-27 03:14:10] 
+..........[45000000 Read-Pairs processed] [Time: 2017-01-27 03:16:08] 
+..........[46000000 Read-Pairs processed] [Time: 2017-01-27 03:18:08] 
+..........[47000000 Read-Pairs processed] [Time: 2017-01-27 03:20:08] 
+..........[48000000 Read-Pairs processed] [Time: 2017-01-27 03:21:24] 
+..........[49000000 Read-Pairs processed] [Time: 2017-01-27 03:21:43] 
+..........[50000000 Read-Pairs processed] [Time: 2017-01-27 03:23:29] 
+..........[51000000 Read-Pairs processed] [Time: 2017-01-27 03:24:52] 
+..........[52000000 Read-Pairs processed] [Time: 2017-01-27 03:26:49] 
+..........[53000000 Read-Pairs processed] [Time: 2017-01-27 03:28:49] 
+..........[54000000 Read-Pairs processed] [Time: 2017-01-27 03:30:48] 
+..........[55000000 Read-Pairs processed] [Time: 2017-01-27 03:32:47] 
+..........[56000000 Read-Pairs processed] [Time: 2017-01-27 03:34:44] 
+..........[57000000 Read-Pairs processed] [Time: 2017-01-27 03:36:08] 
+..........[58000000 Read-Pairs processed] [Time: 2017-01-27 03:38:09] 
+..........[59000000 Read-Pairs processed] [Time: 2017-01-27 03:40:07] 
+..........[60000000 Read-Pairs processed] [Time: 2017-01-27 03:42:07] 
+..........[61000000 Read-Pairs processed] [Time: 2017-01-27 03:43:24] 
+..........[62000000 Read-Pairs processed] [Time: 2017-01-27 03:45:21] 
+..........[63000000 Read-Pairs processed] [Time: 2017-01-27 03:47:19] 
+..........[64000000 Read-Pairs processed] [Time: 2017-01-27 03:49:12] 
+..........[65000000 Read-Pairs processed] [Time: 2017-01-27 03:50:48] 
+..........[66000000 Read-Pairs processed] [Time: 2017-01-27 03:52:33] 
+..........[67000000 Read-Pairs processed] [Time: 2017-01-27 03:54:30] 
+..........[68000000 Read-Pairs processed] [Time: 2017-01-27 03:56:31] 
+..........[69000000 Read-Pairs processed] [Time: 2017-01-27 03:58:25] 
+..........[70000000 Read-Pairs processed] [Time: 2017-01-27 04:00:22] 
+..........[71000000 Read-Pairs processed] [Time: 2017-01-27 04:02:20] 
+..........[72000000 Read-Pairs processed] [Time: 2017-01-27 04:04:22] 
+..........[73000000 Read-Pairs processed] [Time: 2017-01-27 04:06:12] 
+.........
+Finished reading SAM. Read: 73966365 reads/read-pairs.
+Finished reading SAM. Used: 62999489 reads/read-pairs.
+[Time: 2017-01-27 04:07:01] [Mem usage: [13GB / 16GB]] [Elapsed Time: 02:13:27.0593]
+> Read Stats:
+>   READ_PAIR_OK                   62999489
+>   TOTAL_READ_PAIRS               73966365
+>   DROPPED_NOT_PROPER_PAIR        0
+>   DROPPED_READ_FAILS_VENDOR_QC   0
+>   DROPPED_MARKED_NOT_VALID       0
+>   DROPPED_CHROMS_MISMATCH        0
+>   DROPPED_PAIR_STRANDS_MISMATCH  0
+>   DROPPED_IGNORED_CHROMOSOME     0
+>   DROPPED_NOT_UNIQUE_ALIGNMENT   10966876
+Writing Output...
+DEBUG NOTE: IncludeGenesSet.size: 58199
+DEBUG NOTE: sortedReadCountSeq.size: 22429
+DEBUG NOTE: coverageThresholds: 11214;16821;20186;22429
+DEBUG NOTE: coverageSpans: [(0,11214);(11214,16821);(16821,20186);(20186,22429)]
+DEBUG NOTE:	[1.bottomHalf][0.5] = [0,11214]
+DEBUG NOTE:	[2.upperMidQuartile][0.75] = [11214,16821]
+DEBUG NOTE:	[3.75to90][0.9] = [16821,20186]
+DEBUG NOTE:	[4.high][1.0] = [20186,22429]
+      (DEBUG) Generating Biotype Map [2017-01-27 04:07:10]
+      (DEBUG) Extracted gene BioType using key "gene_biotype".
+              Found 44 types: [TR_V_gene,unprocessed_pseudogene,protein_coding,IG_V_gene,TR_J_gene,Mt_tRNA,rRNA,TR_C_gene,TEC,vaultRNA,translated_processed_pseudogene,miRNA,scaRNA,TR_D_gene,snRNA,TR_V_pseudogene,snoRNA,transcribed_processed_pseudogene,IG_J_pseudogene,processed_transcript,TR_J_pseudogene,IG_V_pseudogene,3prime_overlapping_ncrna,IG_J_gene,processed_pseudogene,transcribed_unitary_pseudogene,IG_C_pseudogene,sense_overlapping,transcribed_unprocessed_pseudogene,lincRNA,translated_unprocessed_pseudogene,IG_C_gene,misc_RNA,ribozyme,IG_D_gene,polymorphic_pseudogene,antisense,Mt_rRNA,unitary_pseudogene,pseudogene,sRNA,non_coding,macro_lncRNA,sense_intronic]
+      (DEBUG) Finished Biotype Map [2017-01-27 04:09:37]
+length of knownCountMap after run: 374703
+QoRTs QC complete with no problems.
+Done.
+Time spent on setup:           00:03:58.0490
+Time spent on SAM iteration:   02:09:29.0103
+                               (1.7505704563599054 minutes per million read-pairs)
+                               (2.055307676119934 minutes per million read-pairs used)
+Time spent on file output:     00:02:45.0154
+Total runtime:                 02:16:12.0747
+Done. (Fri Jan 27 04:09:46 EST 2017)

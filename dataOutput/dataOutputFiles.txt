@@ -1,0 +1,19 @@
+# jamaOncology_2016.R script should produce the following outputs
+
+eFigure_1.pdf
+eFigure_2.pdf
+eFigure_2B.pdf
+eFigure_3.pdf
+Figure_1A-legend.pdf
+Figure_1A.pdf
+Figure_1B-legend.pdf
+Figure_1B.pdf
+Figure_2A.pdf
+Figure_2B-bottom-legend.pdf
+Figure_2B-bottom.pdf
+Figure_2B-top-legend.pdf
+Figure_2B-top.pdf
+Figure_3A.pdf
+genefu_pam50.brain.met.pairs-ns-samples.txt
+genefu_pam50.probabilities.brain.met.pairs-ns-samples.txt
+nanostring.log2.fc.txt

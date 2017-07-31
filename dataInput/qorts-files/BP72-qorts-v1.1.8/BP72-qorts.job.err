@@ -1,0 +1,153 @@
+Starting QoRTs v1.1.8 (Compiled Wed Jul 13 13:35:56 EDT 2016)
+Starting time: (Wed Oct 12 11:02:16 EDT 2016)
+INPUT_COMMAND(QC)
+  INPUT_ARG(infile)=/mnt/mobydisk/pan/genomics/data/alee/nolan/projects/breast-mets/rna-seq/brain/BP72/BP72-star-2.4.2a-counts-ensemblv80/BP72.star.sorted.bam
+  INPUT_ARG(gtffile)=/mnt/mobydisk/pan/genomics/data/alee/nolan/apps/star/reference-files/Homo_sapiens.GRCh38.80.gtf
+  INPUT_ARG(outdir)=/mnt/mobydisk/pan/genomics/data/alee/nolan/projects/breast-mets/rna-seq/brain/BP72/BP72-qorts-v1.1.8
+  INPUT_ARG(stranded)=true
+Created Log File: /mnt/mobydisk/pan/genomics/data/alee/nolan/projects/breast-mets/rna-seq/brain/BP72/BP72-qorts-v1.1.8/QC.BYh0Iy9BPgpp.log
+Starting QC
+[Time: 2016-10-12 11:02:16] [Mem usage: [75MB / 2058MB]] [Elapsed Time: 00:00:00.0000]
+QoRTs is Running in paired-end mode.
+QoRTs is Running in any-sorted mode.
+Running functions: NVC, GCDistribution, GeneCalcs, QualityScoreDistribution, 
+        writeJunctionSeqCounts, writeKnownSplices, 
+        writeNovelSplices, writeClippedNVC, CigarOpDistribution, 
+        InsertSize, chromCounts, writeSpliceExon, 
+        writeGenewiseGeneBody, JunctionCalcs, writeGeneCounts, 
+        writeBiotypeCounts, writeDESeq, writeDEXSeq, writeGeneBody, 
+        StrandCheck
+Pre-alignment read count unknown (Set --seqReadCt or --rawfastq)
+Checking first 10000 reads. Checking SAM file for formatting errors...
+   Sorting Note: Reads are not sorted by name (This is OK).
+   Sorting Note: Reads are sorted by position (This is OK).
+Done checking first 10000 reads. No major problems detected.
+SAMRecord Reader Generated. Read length: 75.
+[Time: 2016-10-12 11:02:18] [Mem usage: [673MB / 2595MB]] [Elapsed Time: 00:00:01.0698]
+Compiling flat feature annotation, internally in memory...
+Internal flat feature annotation compiled!
+QC Utilities Generated!
+[Time: 2016-10-12 11:06:14] [Mem usage: [8GB / 10GB]] [Elapsed Time: 00:03:57.0991]
+..........[1000000 Read-Pairs processed] [Time: 2016-10-12 11:07:59] 
+...
+NOTE: Unmatched Read Buffer Size > 100000 [Mem usage:[8GB / 13GB]]
+    (This is generally not a problem, but if this increases further then OutOfMemoryExceptions
+    may occur.
+    If memory errors do occur, either increase memory allocation or sort the bam-file by name
+    and rerun with the '--nameSorted' option.
+    This might also indicate that your dataset contains an unusually large number of
+    chimeric read-pairs. Or it could occur simply due to the presence of genomic
+    loci with extremly high coverage. It may also indicate a SAM/BAM file that 
+    does not adhere to the standard SAM specification.)
+...
+NOTE: Unmatched Read Buffer Size > 200000 [Mem usage:[6GB / 13GB]]
+....[2000000 Read-Pairs processed] [Time: 2016-10-12 11:10:01] 
+..........[3000000 Read-Pairs processed] [Time: 2016-10-12 11:12:01] 
+..........[4000000 Read-Pairs processed] [Time: 2016-10-12 11:13:50] 
+..........[5000000 Read-Pairs processed] [Time: 2016-10-12 11:14:58] 
+..........[6000000 Read-Pairs processed] [Time: 2016-10-12 11:15:50] 
+..........[7000000 Read-Pairs processed] [Time: 2016-10-12 11:17:40] 
+..........[8000000 Read-Pairs processed] [Time: 2016-10-12 11:19:36] 
+..........[9000000 Read-Pairs processed] [Time: 2016-10-12 11:21:22] 
+..........[10000000 Read-Pairs processed] [Time: 2016-10-12 11:22:40] 
+..........[11000000 Read-Pairs processed] [Time: 2016-10-12 11:24:38] 
+..........[12000000 Read-Pairs processed] [Time: 2016-10-12 11:26:41] 
+..........[13000000 Read-Pairs processed] [Time: 2016-10-12 11:28:47] 
+..........[14000000 Read-Pairs processed] [Time: 2016-10-12 11:30:10] 
+..........[15000000 Read-Pairs processed] [Time: 2016-10-12 11:32:02] 
+..........[16000000 Read-Pairs processed] [Time: 2016-10-12 11:33:52] 
+..........[17000000 Read-Pairs processed] [Time: 2016-10-12 11:35:50] 
+..........[18000000 Read-Pairs processed] [Time: 2016-10-12 11:37:47] 
+..........[19000000 Read-Pairs processed] [Time: 2016-10-12 11:39:35] 
+..........[20000000 Read-Pairs processed] [Time: 2016-10-12 11:41:32] 
+..........[21000000 Read-Pairs processed] [Time: 2016-10-12 11:43:16] 
+..........[22000000 Read-Pairs processed] [Time: 2016-10-12 11:45:08] 
+..........[23000000 Read-Pairs processed] [Time: 2016-10-12 11:47:04] 
+..........[24000000 Read-Pairs processed] [Time: 2016-10-12 11:48:51] 
+..........[25000000 Read-Pairs processed] [Time: 2016-10-12 11:50:03] 
+..........[26000000 Read-Pairs processed] [Time: 2016-10-12 11:51:16] 
+..........[27000000 Read-Pairs processed] [Time: 2016-10-12 11:52:36] 
+..........[28000000 Read-Pairs processed] [Time: 2016-10-12 11:54:37] 
+..........[29000000 Read-Pairs processed] [Time: 2016-10-12 11:56:24] 
+..........[30000000 Read-Pairs processed] [Time: 2016-10-12 11:58:07] 
+..........[31000000 Read-Pairs processed] [Time: 2016-10-12 11:58:56] 
+..........[32000000 Read-Pairs processed] [Time: 2016-10-12 11:59:40] 
+..........[33000000 Read-Pairs processed] [Time: 2016-10-12 12:01:04] 
+..........[34000000 Read-Pairs processed] [Time: 2016-10-12 12:02:55] 
+..........[35000000 Read-Pairs processed] [Time: 2016-10-12 12:03:22] 
+NOTE: Unmatched Read Buffer Size > 400000 [Mem usage:[5GB / 16GB]]
+..........[36000000 Read-Pairs processed] [Time: 2016-10-12 12:04:22] 
+..........[37000000 Read-Pairs processed] [Time: 2016-10-12 12:06:05] 
+..........[38000000 Read-Pairs processed] [Time: 2016-10-12 12:08:11] 
+..........[39000000 Read-Pairs processed] [Time: 2016-10-12 12:10:07] 
+..........[40000000 Read-Pairs processed] [Time: 2016-10-12 12:12:00] 
+..........[41000000 Read-Pairs processed] [Time: 2016-10-12 12:13:56] 
+..........[42000000 Read-Pairs processed] [Time: 2016-10-12 12:15:50] 
+..........[43000000 Read-Pairs processed] [Time: 2016-10-12 12:17:40] 
+..........[44000000 Read-Pairs processed] [Time: 2016-10-12 12:19:38] 
+..........[45000000 Read-Pairs processed] [Time: 2016-10-12 12:21:31] 
+..........[46000000 Read-Pairs processed] [Time: 2016-10-12 12:23:33] 
+..........[47000000 Read-Pairs processed] [Time: 2016-10-12 12:24:57] 
+..........[48000000 Read-Pairs processed] [Time: 2016-10-12 12:26:17] 
+..........[49000000 Read-Pairs processed] [Time: 2016-10-12 12:27:18] 
+..........[50000000 Read-Pairs processed] [Time: 2016-10-12 12:29:07] 
+..........[51000000 Read-Pairs processed] [Time: 2016-10-12 12:31:02] 
+..........[52000000 Read-Pairs processed] [Time: 2016-10-12 12:33:02] 
+..........[53000000 Read-Pairs processed] [Time: 2016-10-12 12:34:58] 
+..........[54000000 Read-Pairs processed] [Time: 2016-10-12 12:35:52] 
+..........[55000000 Read-Pairs processed] [Time: 2016-10-12 12:37:03] 
+..........[56000000 Read-Pairs processed] [Time: 2016-10-12 12:38:13] 
+..........[57000000 Read-Pairs processed] [Time: 2016-10-12 12:39:53] 
+..........[58000000 Read-Pairs processed] [Time: 2016-10-12 12:41:46] 
+..........[59000000 Read-Pairs processed] [Time: 2016-10-12 12:43:42] 
+..........[60000000 Read-Pairs processed] [Time: 2016-10-12 12:45:39] 
+..........[61000000 Read-Pairs processed] [Time: 2016-10-12 12:47:34] 
+..........[62000000 Read-Pairs processed] [Time: 2016-10-12 12:49:31] 
+..........[63000000 Read-Pairs processed] [Time: 2016-10-12 12:51:16] 
+..........[64000000 Read-Pairs processed] [Time: 2016-10-12 12:52:25] 
+..........[65000000 Read-Pairs processed] [Time: 2016-10-12 12:54:20] 
+..........[66000000 Read-Pairs processed] [Time: 2016-10-12 12:56:09] 
+..........[67000000 Read-Pairs processed] [Time: 2016-10-12 12:56:52] 
+..........[68000000 Read-Pairs processed] [Time: 2016-10-12 12:57:19] 
+..........[69000000 Read-Pairs processed] [Time: 2016-10-12 12:57:55] 
+..........[70000000 Read-Pairs processed] [Time: 2016-10-12 12:58:37] 
+..........[71000000 Read-Pairs processed] [Time: 2016-10-12 13:00:23] 
+..........[72000000 Read-Pairs processed] [Time: 2016-10-12 13:02:20] 
+..........[73000000 Read-Pairs processed] [Time: 2016-10-12 13:04:02] 
+..........[74000000 Read-Pairs processed] [Time: 2016-10-12 13:05:24] 
+..........[75000000 Read-Pairs processed] [Time: 2016-10-12 13:07:23] 
+..........[76000000 Read-Pairs processed] [Time: 2016-10-12 13:08:49] 
+..........[77000000 Read-Pairs processed] [Time: 2016-10-12 13:10:42] 
+..........[78000000 Read-Pairs processed] [Time: 2016-10-12 13:12:39] 
+..........[79000000 Read-Pairs processed] [Time: 2016-10-12 13:14:33] 
+..........[80000000 Read-Pairs processed] [Time: 2016-10-12 13:16:21] 
+..........[81000000 Read-Pairs processed] [Time: 2016-10-12 13:17:56] 
+..........[82000000 Read-Pairs processed] [Time: 2016-10-12 13:19:51] 
+..........[83000000 Read-Pairs processed] [Time: 2016-10-12 13:21:45] 
+..........[84000000 Read-Pairs processed] [Time: 2016-10-12 13:23:31] 
+..........[85000000 Read-Pairs processed] [Time: 2016-10-12 13:25:20] 
+..........[86000000 Read-Pairs processed] [Time: 2016-10-12 13:26:08] 
+.....
+Finished reading SAM. Read: 86544054 reads/read-pairs.
+Finished reading SAM. Used: 66999437 reads/read-pairs.
+[Time: 2016-10-12 13:26:34] [Mem usage: [7GB / 16GB]] [Elapsed Time: 02:24:17.0402]
+> Read Stats:
+>   READ_PAIR_OK                   66999437
+>   TOTAL_READ_PAIRS               86544054
+>   DROPPED_NOT_PROPER_PAIR        0
+>   DROPPED_READ_FAILS_VENDOR_QC   0
+>   DROPPED_MARKED_NOT_VALID       0
+>   DROPPED_CHROMS_MISMATCH        0
+>   DROPPED_PAIR_STRANDS_MISMATCH  0
+>   DROPPED_IGNORED_CHROMOSOME     0
+>   DROPPED_NOT_UNIQUE_ALIGNMENT   19544617
+Writing Output...
+QoRTs QC complete with no problems.
+Done.
+Time spent on setup:           00:03:57.0991
+Time spent on SAM iteration:   02:20:19.0411
+                               (1.6213322600610627 minutes per million read-pairs)
+                               (2.094296205304929 minutes per million read-pairs used)
+Time spent on file output:     00:02:36.0323
+Total runtime:                 02:26:53.0725
+Done. (Wed Oct 12 13:29:10 EDT 2016)

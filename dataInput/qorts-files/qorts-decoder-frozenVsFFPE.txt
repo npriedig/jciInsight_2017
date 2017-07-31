@@ -1,0 +1,9 @@
+unique.ID	group.ID
+BP29-qorts-v1.1.8	FFPE
+BP51-qorts-v1.1.8	FFPE
+BP68-qorts-v1.1.8	FFPE
+BP72-qorts-v1.1.8	FFPE
+BPF29-qorts-v1.1.8	Frozen
+BPF51-qorts-v1.1.8	Frozen
+BPF68-qorts-v1.1.8	Frozen
+BPF72-qorts-v1.1.8	Frozen

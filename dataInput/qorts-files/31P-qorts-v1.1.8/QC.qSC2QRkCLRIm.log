@@ -1,0 +1,54 @@
+Starting QoRTs v1.1.8 (Compiled Wed Jul 13 13:35:56 EDT 2016)
+Starting time: (Fri Jan 27 00:37:58 EST 2017)
+INPUT_COMMAND(QC)
+  INPUT_ARG(infile)=/mnt/mobydisk/pan/genomics/data/alee/nolan/projects/breast-mets/rna-seq/bone/60P/60P-star-2.4.2a-counts-ensemblv80/60P.star.sorted.bam
+  INPUT_ARG(gtffile)=/mnt/mobydisk/pan/genomics/data/alee/nolan/apps/star/reference-files/Homo_sapiens.GRCh38.80.gtf
+  INPUT_ARG(outdir)=/mnt/mobydisk/pan/genomics/data/alee/nolan/projects/breast-mets/rna-seq/bone/31P/31P-qorts-v1.1.8
+  INPUT_ARG(stranded)=true
+Created Log File: /mnt/mobydisk/pan/genomics/data/alee/nolan/projects/breast-mets/rna-seq/bone/31P/31P-qorts-v1.1.8/QC.qSC2QRkCLRIm.log
+Starting QC
+[Time: 2017-01-27 00:37:58] [Mem usage: [75MB / 2058MB]] [Elapsed Time: 00:00:00.0000]
+QoRTs is Running in paired-end mode.
+QoRTs is Running in any-sorted mode.
+Running functions: NVC, GCDistribution, GeneCalcs, QualityScoreDistribution, 
+        writeJunctionSeqCounts, writeKnownSplices, 
+        writeNovelSplices, writeClippedNVC, CigarOpDistribution, 
+        InsertSize, chromCounts, writeSpliceExon, 
+        writeGenewiseGeneBody, JunctionCalcs, writeGeneCounts, 
+        writeBiotypeCounts, writeDESeq, writeDEXSeq, writeGeneBody, 
+        StrandCheck
+Pre-alignment read count unknown (Set --seqReadCt or --rawfastq)
+Checking first 10000 reads. Checking SAM file for formatting errors...
+   Stats on the first 10000 reads:
+        Num Reads Primary Map:    3036
+        Num Reads Paired-ended:   10000
+        Num Reads mapped pair:    3036
+        Num Pair names found:     1831
+        Num Pairs matched:        1205
+        Read Seq length:          75 to 75
+        Unclipped Read length:    75 to 75
+        Final maxReadLength:      75
+        maxPhredScore:            36
+        minPhredScore:            2
+   Note: Data appears to be paired-ended.
+   Sorting Note: Reads are not sorted by name (This is OK).
+   Sorting Note: Reads are sorted by position (This is OK).
+Done checking first 10000 reads. No major problems detected.
+SAMRecord Reader Generated. Read length: 75.
+[Time: 2017-01-27 00:42:02] [Mem usage: [123MB / 2058MB]] [Elapsed Time: 00:04:04.0329]
+> Init GeneCalcs Utility
+helper_calculateGeneAssignmentMap_strict. Found: 65217 genes in the supplied annotation.
+helper_calculateGeneAssignmentMap_strict. Found: 7018 genes with ambiguous segments.
+helper_calculateGeneAssignmentMap_strict. Found: 58199 genes after first-pass filtering
+making makeGeneIntervalMap for geneBody calculations. Found: 58199 acceptable genes for gene-body analysis.
+Compiling flat feature annotation, internally in memory...
+FlatteningGtf: starting...(2017-01-27 00:50:10)
+    FlatteningGtf: gtf file read complete.(2017-01-27 00:53:21)
+    FlatteningGtf: Splice Junction Map read.(2017-01-27 00:53:23)
+    FlatteningGtf: gene Sets generated.(2017-01-27 00:53:24)
+    FlatteningGtf: Aggregate Sets built.
+    FlatteningGtf: Compiling Aggregate Info . . . (2017-01-27 00:53:24)
+    FlatteningGtf: Finished Compiling Aggregate Info. (2017-01-27 00:53:25)
+    FlatteningGtf: Iterating through the step-vector...(2017-01-27 00:53:25)
+    FlatteningGtf: Adding the aggregate genes themselves...(2017-01-27 00:53:26)
+    FlatteningGtf: Iterating through the splice junctions...(2017-01-27 00:53:27)

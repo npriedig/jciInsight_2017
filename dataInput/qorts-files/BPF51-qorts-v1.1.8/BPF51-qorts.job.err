@@ -1,0 +1,105 @@
+Starting QoRTs v1.1.8 (Compiled Wed Jul 13 13:35:56 EDT 2016)
+Starting time: (Wed Oct 12 08:46:21 EDT 2016)
+INPUT_COMMAND(QC)
+  INPUT_ARG(infile)=/mnt/mobydisk/pan/genomics/data/alee/nolan/projects/breast-mets/rna-seq/brain/orphan/BPF51/BPF51-star-2.4.2a-counts-ensemblv80/BPF51.star.sorted.bam
+  INPUT_ARG(gtffile)=/mnt/mobydisk/pan/genomics/data/alee/nolan/apps/star/reference-files/Homo_sapiens.GRCh38.80.gtf
+  INPUT_ARG(outdir)=/mnt/mobydisk/pan/genomics/data/alee/nolan/projects/breast-mets/rna-seq/brain/orphan/BPF51/BPF51-qorts-v1.1.8
+  INPUT_ARG(stranded)=true
+Created Log File: /mnt/mobydisk/pan/genomics/data/alee/nolan/projects/breast-mets/rna-seq/brain/orphan/BPF51/BPF51-qorts-v1.1.8/QC.pBa1qbtqAbvv.log
+Starting QC
+[Time: 2016-10-12 08:46:21] [Mem usage: [75MB / 2058MB]] [Elapsed Time: 00:00:00.0000]
+QoRTs is Running in paired-end mode.
+QoRTs is Running in any-sorted mode.
+Running functions: NVC, GCDistribution, GeneCalcs, QualityScoreDistribution, 
+        writeJunctionSeqCounts, writeKnownSplices, 
+        writeNovelSplices, writeClippedNVC, CigarOpDistribution, 
+        InsertSize, chromCounts, writeSpliceExon, 
+        writeGenewiseGeneBody, JunctionCalcs, writeGeneCounts, 
+        writeBiotypeCounts, writeDESeq, writeDEXSeq, writeGeneBody, 
+        StrandCheck
+Pre-alignment read count unknown (Set --seqReadCt or --rawfastq)
+Checking first 10000 reads. Checking SAM file for formatting errors...
+   Sorting Note: Reads are not sorted by name (This is OK).
+   Sorting Note: Reads are sorted by position (This is OK).
+Done checking first 10000 reads. No major problems detected.
+SAMRecord Reader Generated. Read length: 75.
+[Time: 2016-10-12 08:46:22] [Mem usage: [131MB / 2058MB]] [Elapsed Time: 00:00:01.0694]
+Compiling flat feature annotation, internally in memory...
+Internal flat feature annotation compiled!
+QC Utilities Generated!
+[Time: 2016-10-12 08:50:20] [Mem usage: [4541MB / 7GB]] [Elapsed Time: 00:03:59.0224]
+....
+NOTE: Unmatched Read Buffer Size > 100000 [Mem usage:[3036MB / 8GB]]
+    (This is generally not a problem, but if this increases further then OutOfMemoryExceptions
+    may occur.
+    If memory errors do occur, either increase memory allocation or sort the bam-file by name
+    and rerun with the '--nameSorted' option.
+    This might also indicate that your dataset contains an unusually large number of
+    chimeric read-pairs. Or it could occur simply due to the presence of genomic
+    loci with extremly high coverage. It may also indicate a SAM/BAM file that 
+    does not adhere to the standard SAM specification.)
+..
+NOTE: Unmatched Read Buffer Size > 200000 [Mem usage:[4575MB / 9GB]]
+....[1000000 Read-Pairs processed] [Time: 2016-10-12 08:52:17] 
+..........[2000000 Read-Pairs processed] [Time: 2016-10-12 08:54:00] 
+..........[3000000 Read-Pairs processed] [Time: 2016-10-12 08:55:42] 
+..........[4000000 Read-Pairs processed] [Time: 2016-10-12 08:57:29] 
+..........[5000000 Read-Pairs processed] [Time: 2016-10-12 08:59:25] 
+..........[6000000 Read-Pairs processed] [Time: 2016-10-12 09:01:22] 
+..........[7000000 Read-Pairs processed] [Time: 2016-10-12 09:03:09] 
+..........[8000000 Read-Pairs processed] [Time: 2016-10-12 09:04:57] 
+..........[9000000 Read-Pairs processed] [Time: 2016-10-12 09:06:55] 
+..........[10000000 Read-Pairs processed] [Time: 2016-10-12 09:08:40] 
+..........[11000000 Read-Pairs processed] [Time: 2016-10-12 09:10:28] 
+..........[12000000 Read-Pairs processed] [Time: 2016-10-12 09:12:25] 
+..........[13000000 Read-Pairs processed] [Time: 2016-10-12 09:13:46] 
+..........[14000000 Read-Pairs processed] [Time: 2016-10-12 09:15:30] 
+..........[15000000 Read-Pairs processed] [Time: 2016-10-12 09:15:47] 
+..........[16000000 Read-Pairs processed] [Time: 2016-10-12 09:17:18] 
+..........[17000000 Read-Pairs processed] [Time: 2016-10-12 09:19:19] 
+..........[18000000 Read-Pairs processed] [Time: 2016-10-12 09:21:18] 
+..........[19000000 Read-Pairs processed] [Time: 2016-10-12 09:23:17] 
+..........[20000000 Read-Pairs processed] [Time: 2016-10-12 09:25:16] 
+..........[21000000 Read-Pairs processed] [Time: 2016-10-12 09:27:08] 
+..........[22000000 Read-Pairs processed] [Time: 2016-10-12 09:29:12] 
+..........[23000000 Read-Pairs processed] [Time: 2016-10-12 09:31:15] 
+..........[24000000 Read-Pairs processed] [Time: 2016-10-12 09:33:05] 
+..........[25000000 Read-Pairs processed] [Time: 2016-10-12 09:33:26] 
+..........[26000000 Read-Pairs processed] [Time: 2016-10-12 09:35:23] 
+..........[27000000 Read-Pairs processed] [Time: 2016-10-12 09:37:20] 
+..........[28000000 Read-Pairs processed] [Time: 2016-10-12 09:39:21] 
+..........[29000000 Read-Pairs processed] [Time: 2016-10-12 09:41:12] 
+..........[30000000 Read-Pairs processed] [Time: 2016-10-12 09:43:06] 
+..........[31000000 Read-Pairs processed] [Time: 2016-10-12 09:43:51] 
+..........[32000000 Read-Pairs processed] [Time: 2016-10-12 09:45:42] 
+..........[33000000 Read-Pairs processed] [Time: 2016-10-12 09:47:35] 
+..........[34000000 Read-Pairs processed] [Time: 2016-10-12 09:49:27] 
+..........[35000000 Read-Pairs processed] [Time: 2016-10-12 09:51:30] 
+..........[36000000 Read-Pairs processed] [Time: 2016-10-12 09:53:26] 
+..........[37000000 Read-Pairs processed] [Time: 2016-10-12 09:55:20] 
+..........[38000000 Read-Pairs processed] [Time: 2016-10-12 09:57:12] 
+..........[39000000 Read-Pairs processed] [Time: 2016-10-12 09:58:51] 
+......
+Finished reading SAM. Read: 39673242 reads/read-pairs.
+Finished reading SAM. Used: 32875410 reads/read-pairs.
+[Time: 2016-10-12 09:59:12] [Mem usage: [3530MB / 15GB]] [Elapsed Time: 01:12:51.0670]
+> Read Stats:
+>   READ_PAIR_OK                   32875410
+>   TOTAL_READ_PAIRS               39673242
+>   DROPPED_NOT_PROPER_PAIR        0
+>   DROPPED_READ_FAILS_VENDOR_QC   0
+>   DROPPED_MARKED_NOT_VALID       0
+>   DROPPED_CHROMS_MISMATCH        0
+>   DROPPED_PAIR_STRANDS_MISMATCH  0
+>   DROPPED_IGNORED_CHROMOSOME     0
+>   DROPPED_NOT_UNIQUE_ALIGNMENT   6797832
+Writing Output...
+QoRTs QC complete with no problems.
+Done.
+Time spent on setup:           00:03:59.0224
+Time spent on SAM iteration:   01:08:52.0446
+                               (1.735846711661897 minutes per million read-pairs)
+                               (2.094777423815145 minutes per million read-pairs used)
+Time spent on file output:     00:02:35.0359
+Total runtime:                 01:15:27.0029
+Done. (Wed Oct 12 10:01:48 EDT 2016)

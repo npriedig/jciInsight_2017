@@ -1,0 +1,65 @@
+Starting QoRTs v1.1.8 (Compiled Wed Jul 13 13:35:56 EDT 2016)
+Starting time: (Fri Jan 27 00:54:47 EST 2017)
+INPUT_COMMAND(QC)
+  INPUT_ARG(infile)=/mnt/mobydisk/pan/genomics/data/alee/nolan/projects/breast-mets/rna-seq/bone/22P/22P-star-2.4.2a-counts-ensemblv80/22P.star.sorted.bam
+  INPUT_ARG(gtffile)=/mnt/mobydisk/pan/genomics/data/alee/nolan/apps/star/reference-files/Homo_sapiens.GRCh38.80.gtf
+  INPUT_ARG(outdir)=/mnt/mobydisk/pan/genomics/data/alee/nolan/projects/breast-mets/rna-seq/bone/22P/22P-qorts-v1.1.8
+  INPUT_ARG(stranded)=true
+Created Log File: /mnt/mobydisk/pan/genomics/data/alee/nolan/projects/breast-mets/rna-seq/bone/22P/22P-qorts-v1.1.8/QC.zXESIWntFCnH.log
+Starting QC
+[Time: 2017-01-27 00:54:47] [Mem usage: [75MB / 2058MB]] [Elapsed Time: 00:00:00.0000]
+QoRTs is Running in paired-end mode.
+QoRTs is Running in any-sorted mode.
+Running functions: NVC, GCDistribution, GeneCalcs, QualityScoreDistribution, 
+        writeJunctionSeqCounts, writeKnownSplices, 
+        writeNovelSplices, writeClippedNVC, CigarOpDistribution, 
+        InsertSize, chromCounts, writeSpliceExon, 
+        writeGenewiseGeneBody, JunctionCalcs, writeGeneCounts, 
+        writeBiotypeCounts, writeDESeq, writeDEXSeq, writeGeneBody, 
+        StrandCheck
+Pre-alignment read count unknown (Set --seqReadCt or --rawfastq)
+Checking first 10000 reads. Checking SAM file for formatting errors...
+   Sorting Note: Reads are not sorted by name (This is OK).
+   Sorting Note: Reads are sorted by position (This is OK).
+Done checking first 10000 reads. No major problems detected.
+SAMRecord Reader Generated. Read length: 75.
+[Time: 2017-01-27 00:54:49] [Mem usage: [125MB / 2058MB]] [Elapsed Time: 00:00:01.0677]
+Compiling flat feature annotation, internally in memory...
+Internal flat feature annotation compiled!
+QC Utilities Generated!
+[Time: 2017-01-27 00:58:46] [Mem usage: [4284MB / 6GB]] [Elapsed Time: 00:03:58.0794]
+..........[1000000 Read-Pairs processed] [Time: 2017-01-27 01:00:39] 
+..........[2000000 Read-Pairs processed] [Time: 2017-01-27 01:02:05] 
+..........[3000000 Read-Pairs processed] [Time: 2017-01-27 01:03:32] 
+..........[4000000 Read-Pairs processed] [Time: 2017-01-27 01:05:30] 
+..........[5000000 Read-Pairs processed] [Time: 2017-01-27 01:07:03] 
+..........[6000000 Read-Pairs processed] [Time: 2017-01-27 01:08:41] 
+..........[7000000 Read-Pairs processed] [Time: 2017-01-27 01:10:40] 
+..........[8000000 Read-Pairs processed] [Time: 2017-01-27 01:12:11] 
+..........[9000000 Read-Pairs processed] [Time: 2017-01-27 01:14:12] 
+..........[10000000 Read-Pairs processed] [Time: 2017-01-27 01:15:52] 
+..........[11000000 Read-Pairs processed] [Time: 2017-01-27 01:17:43] 
+.........
+Finished reading SAM. Read: 11919798 reads/read-pairs.
+Finished reading SAM. Used: 9681676 reads/read-pairs.
+[Time: 2017-01-27 01:19:17] [Mem usage: [4512MB / 9GB]] [Elapsed Time: 00:24:29.0683]
+> Read Stats:
+>   READ_PAIR_OK                   9681676
+>   TOTAL_READ_PAIRS               11919798
+>   DROPPED_NOT_PROPER_PAIR        0
+>   DROPPED_READ_FAILS_VENDOR_QC   0
+>   DROPPED_MARKED_NOT_VALID       0
+>   DROPPED_CHROMS_MISMATCH        0
+>   DROPPED_PAIR_STRANDS_MISMATCH  0
+>   DROPPED_IGNORED_CHROMOSOME     0
+>   DROPPED_NOT_UNIQUE_ALIGNMENT   2238122
+Writing Output...
+QoRTs QC complete with no problems.
+Done.
+Time spent on setup:           00:03:58.0795
+Time spent on SAM iteration:   00:20:30.0889
+                               (1.7198278024510147 minutes per million read-pairs)
+                               (2.11740198701134 minutes per million read-pairs used)
+Time spent on file output:     00:02:49.0369
+Total runtime:                 00:27:19.0053
+Done. (Fri Jan 27 01:22:06 EST 2017)
