@@ -1,6 +1,6 @@
 To encourage transparency, replicability/reproducibility, and also for educational purposes, the scripts herein reproduce major figures and findings associated with the following publication:
 
-<pub link> 
+https://insight.jci.org/articles/view/95703
 
 Note that there may be aesthetic or minor differences in figures that are published. If you are interested in other information/scripts/data absent in this repository or the publication, including supplements -- please contact the authors directly. Data/scripts reproducing figures involving raw sequencing or controlled access data are not included in this repository, and will instead be deposited in more appropriate, controlled access databases (i.e. dbGap) whenever possible. 
 
